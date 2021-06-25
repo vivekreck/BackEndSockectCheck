@@ -6,7 +6,8 @@ module.exports = {
             cors: {
                 origin: "http://localhost:1234",
                 methods: ["GET", "POST"],
-            }
+            },
+            secure: true, reconnection: true, rejectUnauthorized: false
         });
         return io;
     },
